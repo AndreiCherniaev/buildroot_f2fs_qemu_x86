@@ -40,4 +40,4 @@ qemu-system-i386 -M pc -drive file=../Buildroot.img,if=virtio,format=raw -net ni
 Note: image file `Buildroot.img` is located outside of repo folder so we use `../`. Optionally add `-nographic` to see output not in extra screen but in console terminal. Or `-display curses` to pseudographic.
 
 ## Problems
-In BIOS terminal `ls` gives empty result. After `insmod f2fs` same situation.
+In BIOS terminal `ls` gives empty result. After `insmod f2fs` same situation. To fix it, f2fs and biosdisk grub2 modules should be used together.
