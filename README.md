@@ -33,7 +33,7 @@ make -C $PWD/buildroot/ linux-update-defconfig BR2_LINUX_KERNEL_CUSTOM_CONFIG_FI
 make linux-dirclean -C buildroot && make linux-rebuild -C buildroot && make -C buildroot
 ```
 ## Start in QEMU
-This code is based on emulation [script1](https://github.com/buildroot/buildroot/blob/02540771bccf7b10c7daecce5f0e1e41a73c1e07/boot/grub2/readme.txt#L4) and [script2](https://github.com/buildroot/buildroot/blob/9e3d572ff532df945fbc282fed22d10098e5718b/board/pc/readme.txt), run the emulation with:
+This code is based on emulation [script1](https://github.com/buildroot/buildroot/blob/02540771bccf7b10c7daecce5f0e1e41a73c1e07/boot/grub2/readme.txt#L4) and [script2](https://github.com/buildroot/buildroot/blob/9e3d572ff532df945fbc282fed22d10098e5718b/board/pc/readme.txt). To booting in BIOS mode, run the emulation with:
 ```
 qemu-system-i386 -M pc -drive file=../Buildroot.img,if=virtio,format=raw -net nic,model=virtio -net user
 ```
