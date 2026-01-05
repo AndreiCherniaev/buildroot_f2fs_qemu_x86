@@ -24,9 +24,9 @@ Tune Linux kernel
 make linux-menuconfig -C buildroot
 ```
 ## Save non-default Linux .config
-In case of Buildroot to save non-default Linux's .config to my_external_tree/board/my_company/my_board/pc_x86_bios_kernel_5.4.228.config
+In case of Buildroot to save non-default Linux's .config to my_external_tree/board/my_company/my_board/linux_f2fs.config
 ```
-make -C $PWD/buildroot/ linux-update-defconfig BR2_LINUX_KERNEL_CUSTOM_CONFIG_FILE=$PWD/my_external_tree/board/my_company/my_board/pc_x86_bios_kernel_5.4.228.config
+make -C $PWD/buildroot/ linux-update-defconfig BR2_LINUX_KERNEL_CUSTOM_CONFIG_FILE=$PWD/my_external_tree/board/my_company/my_board/linux_f2fs.config
 ```
 ## Rebuild kernel
 ```
